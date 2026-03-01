@@ -1,0 +1,97 @@
+body,
+html {
+    height: 100%;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+.pagewrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+    &.hidden {
+        overflow: hidden;
+    }
+
+    * {
+        box-sizing: border-box;
+        font-family: "Inter", sans-serif;
+    }
+}
+
+@media(min-width:1400px) {
+    .container {
+        max-width: 1264px;
+    }
+
+    header .container {
+        max-width: 1324px;
+    }
+}
+
+input {
+    outline: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 105%;
+    letter-spacing: 0.15px;
+}
+
+h2 {
+    color: #A51F7A;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 105%;
+    letter-spacing: 0.15px;
+}
+
+.section-title {
+    color: #000000;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 105%;
+    letter-spacing: 0.15px;
+}
+
+
+
+
+
+.violet-color {
+    color: #512E84;
+}
+
+.purple-color {
+    color: #A51F7A;
+}
+
+.white-color {
+    color: #fff;
+}
