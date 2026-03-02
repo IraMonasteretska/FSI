@@ -3,6 +3,7 @@
     overflow: hidden;
     height: calc(100vh - 172px);
     padding: 80px 0;
+    min-height: 650px;
 
     .quicklinks__header {
         position: relative;
@@ -616,13 +617,227 @@
 
 
 // TEEN PROGRAMS
-// .teenprograms {
-//     background: rgba(#62BB46, 0.3);
-// }
+.teenprograms {
+    background: rgba(#62BB46, 0.3);
+    padding: 80px 0 95px;
+    position: relative;
+    min-height: 650px;
+
+    h2,
+    h3 {
+        padding-bottom: 38px;
+        position: relative;
+        margin-bottom: 35px;
+
+        &::after {
+            content: '';
+            width: 350px;
+            height: 13px;
+            background: #62BB46;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+    }
+
+    p {
+        color: #000;
+        font-size: 24px;
+        line-height: 140%;
+        font-weight: 500;
+        margin-bottom: 40px;
+    }
+}
+
+.teenprograms__descr {
+    padding-left: 50px;
+}
+
+.arrlink {
+    color: #000;
+    font-size: 24px;
+    line-height: 140%;
+    font-weight: 700;
+    text-decoration: none;
+    padding-right: 32px;
+    transition: 0.3s;
+    position: relative;
+
+    span {
+        position: relative;
+        display: inline-block;
+
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+            height: 4px;
+            background: #62BB46;
+            width: 0;
+            transition: 0.3s;
+        }
+    }
+
+    img {
+        content: '';
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+        transition: 0.3s;
+    }
+
+
+
+    &:hover {
+        span {
+            &::after {
+                width: 100%;
+            }
+        }
+
+        img {
+            transform: translate(5px, -50%);
+        }
+    }
+}
+
+.teenprograms__images {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+
+    img {
+        position: absolute;
+        width: 449px;
+        height: 386px;
+        object-fit: cover;
+    }
+
+    .timg1 {
+        top: 28px;
+        right: 359px;
+    }
+
+    .timg2 {
+        top: calc(386px + 60px);
+        right: 359px;
+    }
+
+    .timg3 {
+        right: 0;
+        bottom: calc(386px + 60px);
+    }
+
+    .timg4 {
+        right: 0;
+        bottom: 30px;
+    }
+}
+
+.located {
+    position: relative;
+    min-height: 765px;
+    padding: 108px 0 100px;
+
+    h3 {
+        margin-bottom: 24px;
+    }
+
+    p {
+        color: #000;
+        font-weight: 500;
+        font-size: 30px;
+    }
+}
+
+.located__map {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+}
+
+.located__info {
+    position: relative;
+    z-index: 1;
+}
+
+@media(max-width:1399.8px) {
+
+    .hero {
+        height: calc(100vh - 150px);
+        padding: 60px 0;
+    }
+
+    .quicklinks__list>li {
+        margin-bottom: 10px;
+    }
+
+    .quickinfo {
+        width: calc(100% - 356px);
+        left: 368px;
+    }
+
+    .events__wrapper {
+        position: relative;
+        padding-left: calc((100vw - 1120px) / 2);
+    }
+
+    .teenprograms h2:after,
+    .teenprograms h3:after {
+        height: 8px;
+    }
+
+    .teenprograms h2,
+    .teenprograms h3 {
+        padding-bottom: 25px;
+    }
+
+    .teenprograms__descr {
+        padding-left: 30px;
+    }
+
+    .located {
+        min-height: 600px;
+        padding: 100px 0 60px;
+    }
 
 
 
 
+
+
+
+
+    .hero__text p,
+    .quicklinks__body .gethelp a {
+        font-size: 24px;
+    }
+
+    .event-item h5,
+    .teenprograms p,
+    .arrlink,
+    .located p {
+        font-size: 21px;
+    }
+
+    .quicklinks__list>li>a {
+        font-size: 18px;
+    }
+
+    .quicklinks__header p {
+        font-size: 16px;
+    }
+}
 
 
 //  letter-spacing: 0.15px;

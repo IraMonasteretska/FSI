@@ -40,20 +40,29 @@ $(document).ready(function () {
             // nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: false,
-        },
+        // autoplay: {
+        //     delay: 5000,
+        //     disableOnInteraction: false,
+        // },
         // mousewheel: {
         //     enabled: true,
         //     sensitivity: 1,      
         //     releaseOnEdges: true
         // },
+        breakpoints: {
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            1200: {
+                slidesPerView: 3.5,
+                spaceBetween: 20,
+            },
+            1400: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+            },
+        },
     });
-
-
-
-
-
 
 })

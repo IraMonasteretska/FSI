@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Family Services</title>
-    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <!-- <link rel="icon" type="image/x-icon" href="favicon.png"> -->
     <link rel="stylesheet" href="css/lib/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/lib/swiper.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -723,7 +724,14 @@
                                         <img src="img/main/event2.jpg" alt="img">
                                     </div>
                                     <div class="event-item__body">
-                                        
+                                        <div class="evdescription">
+                                            <h5 class="purple-color">#Righttomentalhealth</h5>
+                                            <p>
+                                                It’s Time to Talk About Mental Health shares real stories that open
+                                                minds, break stigma and show the power of connection and healing.
+                                            </p>
+                                            <a href="#" class="purple-color">Watch now</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -776,35 +784,190 @@
                 </div>
             </div>
 
-            <!-- <div class="teenprograms">
+            <div class="teenprograms">
                 <div class="container">
                     <div class="row">
                         <div class="offset-xl-6 col-xl-6">
-                            <h3 class="section-title">
-                                Teen <br>Programs
-                            </h3>
+                            <div class="teenprograms__descr">
+                                <h3 class="section-title">
+                                    Teen <br>Programs
+                                </h3>
+                                <p>
+                                    Our FREE afterschool and summer programming for middle and high school youth offers
+                                    fun and recreational activities at the Family Partnership Center, and we are
+                                    enhancing our activities to incorporate even greater focus on mental well-being.
+                                </p>
+                                <a href="#" class="arrlink">
+                                    <span>Check it out</span>
+                                    <img src="img/general/green-arrows.svg" alt="icon">
+                                </a>
+                            </div>
+
                         </div>
                     </div>
                 </div>
-            </div> -->
-
-
+                <div class="teenprograms__images">
+                    <img class="timg1" src="img/main/teenpr1.png" alt="img">
+                    <img class="timg2" src="img/main/teenpr2.png" alt="img">
+                    <img class="timg3" src="img/main/teenpr3.png" alt="img">
+                    <img class="timg4" src="img/main/teenpr4.png" alt="img">
+                </div>
+            </div>
 
             <!-- clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); -->
 
-
-
-
+            <div class="located">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <div class="located__info">
+                                <h3 class="purple-color section-title">
+                                    Located throughout the Hudson Valley
+                                </h3>
+                                <p>
+                                    We’re here to help you no matter where you’re located - explore our locations to
+                                    find
+                                    the one that’s most convienient for you
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img class="located__map" src="img/main/map.png" alt="img">
+            </div>
 
         </main>
-        <footer class="footer"></footer>
+
+        <footer class="footer">
+            <div class="footer__topline">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-8">
+                            <div class="footer__social">
+                                <ul>
+                                    <li>Connect With Us</li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/footer/fb.png" alt="facebook">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/footer/instagram.png" alt="instagram">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/footer/ln.png" alt="linkedin">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/footer/x.png" alt="x">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/footer/yt.png" alt="youtube">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 footer__join">
+                            <a href="#">Join our Mailing List</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <div class="footer__info">
+                                <div class="footer__info-col">
+                                    <div class="footer__item">
+                                        <p class="title">
+                                            Family Services <br>
+                                            Administrative Offices
+                                        </p>
+                                        <a href="https://maps.app.goo.gl/NyKhrwirNmWVYahh9" target="_blank">
+                                            29 N Hamilton St
+                                            Poughkeepsie, NY 12601
+                                        </a>
+                                        <a href="tel:8454521110">845.452.1110</a>
+                                    </div>
+                                    <div class="footer__item">
+                                        <p class="title">
+                                            Behavioral Health<br>
+                                            Centers
+                                        </p>
+                                        <a href="tel:8454862703">
+                                            845.486.2703
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="footer__info-col">
+                                    <div class="footer__item">
+                                        <p class="title">
+                                            24 HOUR HOTLINES<br>
+                                            Rape Crisis & Crime Victims
+                                        </p>
+                                        <a href="tel:8454862703">
+                                            845.486.2703
+                                        </a>
+                                    </div>
+                                    <div class="footer__item">
+                                        <p class="title">
+                                            Domestic Violence
+                                        </p>
+                                        <a href="tel:8454855550">
+                                            845.485.5550
+                                        </a>
+                                    </div>
+                                    <div class="footer__item">
+                                        <p class="title">
+                                            Chat Line
+                                        </p>
+                                        <a href="https://www.resourceconnect.com/cvss/chat" target="_blank">
+                                            Text: 845.583.0800 <br>
+                                            resourceconnect/cvss/chat/
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-5">
+                            <div class="footer__descr">
+                                <ul class="footer__language">
+                                    <li><a href="#">English</a></li>
+                                    <li><a href="#">Spanish</a></li>
+                                </ul>
+                                <div class="wrapbox">
+                                    <p>
+                                        For contact information on our Community Programs and Behavioral Health Centers
+                                        throughout Dutchess, Ulster and Orange Counties, please <a href="#">click
+                                            here</a>.
+                                    </p>
+                                </div>
+                                <a href="https://drive.google.com/file/d/1nrKQ68EIRajEDdxCYPd_ZJAvb1QzDA-h/view" target="_blank"><span>Zoom HIPAA Standards</span></a>
+                                <a href="#"><span>Privacy & Data Collection</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 
 
 <script src="js/lib/jquery.js"></script>
 <script src="js/lib/swiper.js"></script>
-<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="js/main.js"></script>
 
 </html>

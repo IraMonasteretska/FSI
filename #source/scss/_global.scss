@@ -95,3 +95,16 @@ h2 {
 .white-color {
     color: #fff;
 }
+
+
+
+
+
+@media(max-width:1399.8px) {
+
+    h1,
+    h2,
+    .section-title {
+        font-size: 46px;
+    }
+}
