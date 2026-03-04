@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partnership</title>
+    <!-- <link rel="icon" type="image/x-icon" href="favicon.png"> -->
+    <link rel="stylesheet" href="css/lib/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/lib/swiper.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="pagewrapper">
+        <header class="header">
+            <div class="container">
+                <div class="row align-items-lg-end align-items-center">
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                        <a href="index.html" class="header__logo">
+                            <img src="img/general/logo.svg" alt="logo">
+                        </a>
+                    </div>
+                    <div class="col-lg-10 col-md-9 col-sm-8 col-6">
+                        <div class="header__topbox">
+                            <a href="#" class="header__donate">Donate</a>
+                            <div class="header__language">
+                                <span>EN</span>
+                                <span class="hide">SP</span>
+                                <input type="checkbox" id="switch" /><label for="switch"></label>
+                            </div>
+                            <a href="#" class="header__escape">ESCAPE</a>
+                            <div class="header__burger">
+                                <button class="burger burger2"><span></span></button>
+                            </div>
+                        </div>
+                        <nav class="header__nav">
+                            <div class="header__topbox">
+                                <a href="#" class="header__donate">Donate</a>
+                                <div class="header__language">
+                                    <span>EN</span>
+                                    <span class="hide">SP</span>
+                                    <input type="checkbox" id="switch" /><label for="switch"></label>
+                                </div>
+                                <a href="#" class="header__escape">ESCAPE</a>
+                            </div>
+                            <ul>
+                                <li class="has-submenu">
+                                    <a href="#">Our Services</a>
+                                    <div class="megamenu">
+                                        <div class="container">
+                                            <div class="grid">
+                                                <div class="grid-sizer grid-item">
+                                                    <div class="megamenu__item">
+                                                        <a href="#" class="mainlink">Mental Health</a>
+                                                        <ul>
+                                                            <li><a href="#">Youth Mental Health »</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="grid-sizer grid-item">
+                                                    <div class="megamenu__item">
+                                                        <a href="#" class="mainlink">Safety & Healing</a>
+                                                        <ul>
+                                                            <li><a href="#">Get Support »</a></li>
+                                                            <li><a href="#">Center for Victim Safety & Support »</a>
+                                                            </li>
+                                                            <li><a href="#">SNUG »</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="grid-sizer grid-item">
+                                                    <div class="megamenu__item">
+                                                        <a href="#" class="mainlink">Youth Programs</a>
+                                                    </div>
+                                                </div>
+                                                <div class="grid-sizer grid-item">
+                                                    <div class="megamenu__item">
+                                                        <a href="#" class="mainlink">Childcare at the Courts</a>
+                                                    </div>
+                                                </div>
+                                                <div class="grid-sizer grid-item">
+                                                    <div class="megamenu__item">
+                                                        <a href="#" class="mainlink">Referral Programs</a>
+                                                        <ul>
+                                                            <li><a href="#">Parent Education »</a></li>
+                                                            <li><a href="#">RESTART »</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="grid-sizer grid-item">
+                                                    <div class="megamenu__item">
+                                                        <a href="#" class="mainlink">Partners & Affiliations</a>
+                                                        <ul>
+                                                            <li><a href="#">UPC »</a></li>
+                                                            <li><a href="#">Sexual Assault Response Team »</a></li>
+                                                            <li><a href="#">Universal Response to Domestic
+                                                                    Violence »</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="has-submenu">
+                                    <a href="#">Family Partnership Center</a>
+                                    <div class="megamenu">
+                                        <div class="container">
+                                            <div class="grid ">
+                                                <div class="grid-sizer grid-item">
+                                                    <div class="megamenu__item">
+                                                        <a href="#" class="mainlink">Services Directory</a>
+                                                    </div>
+                                                </div>
+                                                <div class="grid-sizer grid-item">
+                                                    <div class="megamenu__item">
+                                                        <a href="#" class="mainlink">Events</a>
+                                                    </div>
+                                                </div>
+                                                <div class="grid-sizer grid-item">
+                                                    <div class="megamenu__item">
+                                                        <a href="#" class="mainlink">About & Contact</a>
+                                                    </div>
+                                                </div>
+                                                <div class="grid-sizer grid-item">
+                                                    <div class="megamenu__item">
+                                                        <a href="#" class="mainlink">Lease Space</a>
+                                                    </div>
+                                                </div>
+                                                <div class="grid-sizer grid-item">
+                                                    <div class="megamenu__item">
+                                                        <a href="#" class="mainlink">Host an Event</a>
+                                                    </div>
+                                                </div>
+                                                <div class="grid-sizer grid-item">
+                                                    <div class="megamenu__item">
+                                                        <a href="#" class="mainlink">Partner Hub</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="has-submenu">
+                                    <a href="#">Giving</a>
+                                    <div class="megamenu">
+                                        <div class="container">
+                                            <div class="grid ">
+                                                <div class="grid-sizer grid-item">
+                                                    <div class="megamenu__item">
+                                                        <a href="#" class="mainlink">Donate</a>
+                                                    </div>
+                                                </div>
+                                                <div class="grid-sizer grid-item">
+                                                    <div class="megamenu__item">
+                                                        <a href="#" class="mainlink">Volunteer</a>
+                                                    </div>
+                                                </div>
+                                                <div class="grid-sizer grid-item">
+                                                    <div class="megamenu__item">
+                                                        <a href="#" class="mainlink">Sponsorships</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="has-submenu">
+                                    <a href="#">About Us</a>
+                                    <div class="megamenu">
+                                        <div class="container">
+                                            <div class="grid ">
+                                                <div class="grid-sizer grid-item">
+                                                    <div class="megamenu__item">
+                                                        <a href="#" class="mainlink">News</a>
+                                                    </div>
+                                                </div>
+                                                <div class="grid-sizer grid-item">
+                                                    <div class="megamenu__item">
+                                                        <a href="#" class="mainlink">Financials</a>
+                                                    </div>
+                                                </div>
+                                                <div class="grid-sizer grid-item">
+                                                    <div class="megamenu__item">
+                                                        <a href="#" class="mainlink">Our Impact</a>
+                                                        <ul>
+                                                            <li><a href="#">Impact Report »</a></li>
+                                                            <li><a href="#">Programs Overview »</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="grid-sizer grid-item">
+                                                    <div class="megamenu__item">
+                                                        <a href="#" class="mainlink">Mission & Vision</a>
+                                                    </div>
+                                                </div>
+                                                <div class="grid-sizer grid-item">
+                                                    <div class="megamenu__item">
+                                                        <a href="#" class="mainlink">Leadership & Board</a>
+                                                    </div>
+                                                </div>
+                                                <div class="grid-sizer grid-item">
+                                                    <div class="megamenu__item">
+                                                        <a href="#" class="mainlink">FAQs</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="herosection-large">
+                <img class="herosection__bg" src="img/partnership/hero.jpg" alt="img">
+                <div class="container">
+                    <div class="herosection__info">
+                        <h1>
+                            Support everyone’s right to thrive
+                        </h1>
+                        <h5>
+                            Your donation helps Family Services create a world where safety is a right,<br> healing is
+                            possible, and support is accessible.
+                        </h5>
+                        <a href="#">DONATE NOW</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="waystogive">
+                <div class="container">
+                    <h2 class="purple-color">Ways to Give</h2>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="waystogive__item">
+                                <div class="topline" style="background: #0A85BE;"></div>
+                                <div class="descr">
+                                    <h4>Become a Donor</h4>
+                                    <p>
+                                        Our community needs us to work together to support everyone’s right to thrive.
+                                        Make
+                                        a monthly or one-time gift today and create lasting change.
+                                    </p>
+                                </div>
+
+                                <a href="#">DONATE NOW</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="waystogive__item">
+                                <div class="topline" style="background: #512E84;"></div>
+                                <div class="descr">
+                                    <h4>Become an <br>Annual Partner:</h4>
+                                    <p>
+                                        Help Family Services champion human rights in our community and receive
+                                        exclusive benefits.
+                                    </p>
+                                </div>
+
+                                <a href="#">DONATE NOW</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="waystogive__item">
+                                <div class="topline" style="background: #62BB46;"></div>
+                                <div class="descr">
+                                    <h4>Sponsor a <br>Signature Event:</h4>
+                                    <p>
+                                        From our Family of the Year Awards Dinner to the Fifty2 End Stigma Awareness
+                                        Campaign, our signature events are a venue for you to steward our mission.
+                                    </p>
+                                </div>
+
+                                <a href="#">LEARN MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </main>
+
+        <footer class="footer">
+            <div class="footer__topline">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-8 col-md-7">
+                            <div class="footer__social">
+                                <ul>
+                                    <li>Connect With Us</li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/footer/fb.png" alt="facebook">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/footer/instagram.png" alt="instagram">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/footer/ln.png" alt="linkedin">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/footer/x.png" alt="x">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/footer/yt.png" alt="youtube">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-5 footer__join">
+                            <a href="#">Join our Mailing List</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7 col-sm-6">
+                            <div class="footer__info">
+                                <div class="footer__info-col">
+                                    <div class="footer__item">
+                                        <p class="title">
+                                            Family Services <br>
+                                            Administrative Offices
+                                        </p>
+                                        <a href="https://maps.app.goo.gl/NyKhrwirNmWVYahh9" target="_blank">
+                                            29 N Hamilton St
+                                            Poughkeepsie, NY 12601
+                                        </a>
+                                        <a href="tel:8454521110">845.452.1110</a>
+                                    </div>
+                                    <div class="footer__item">
+                                        <p class="title">
+                                            Behavioral Health<br>
+                                            Centers
+                                        </p>
+                                        <a href="tel:8454862703">
+                                            845.486.2703
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="footer__info-col">
+                                    <div class="footer__item">
+                                        <p class="title">
+                                            24 HOUR HOTLINES<br>
+                                            Rape Crisis & Crime Victims
+                                        </p>
+                                        <a href="tel:8454862703">
+                                            845.486.2703
+                                        </a>
+                                    </div>
+                                    <div class="footer__item">
+                                        <p class="title">
+                                            Domestic Violence
+                                        </p>
+                                        <a href="tel:8454855550">
+                                            845.485.5550
+                                        </a>
+                                    </div>
+                                    <div class="footer__item">
+                                        <p class="title">
+                                            Chat Line
+                                        </p>
+                                        <a href="https://www.resourceconnect.com/cvss/chat" target="_blank">
+                                            Text: 845.583.0800 <br>
+                                            resourceconnect/cvss/chat/
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-5 col-sm-6">
+                            <div class="footer__descr">
+                                <ul class="footer__language">
+                                    <li><a href="#">English</a></li>
+                                    <li><a href="#">Spanish</a></li>
+                                </ul>
+                                <div class="wrapbox">
+                                    <p>
+                                        For contact information on our Community Programs and Behavioral Health Centers
+                                        throughout Dutchess, Ulster and Orange Counties, please <a href="#">click
+                                            here</a>.
+                                    </p>
+                                </div>
+                                <a href="https://drive.google.com/file/d/1nrKQ68EIRajEDdxCYPd_ZJAvb1QzDA-h/view"
+                                    target="_blank"><span>Zoom HIPAA Standards</span></a>
+                                <a href="#"><span>Privacy & Data Collection</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+
+<script src="js/lib/jquery.js"></script>
+<script src="js/lib/swiper.js"></script>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script src="js/main.js"></script>
+
+</html>

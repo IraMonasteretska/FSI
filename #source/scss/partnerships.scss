@@ -1,0 +1,119 @@
+.herosection-large {
+    height: 550px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+
+    .herosection__info {
+        padding-bottom: 0;
+
+        h1 {
+            color: #fff;
+            font-size: 72px;
+            line-height: 104%;
+            font-weight: 600;
+            margin-bottom: 32px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        h5 {
+            color: #fff;
+            font-size: 24px;
+            line-height: 110%;
+            font-weight: 700;
+            letter-spacing: 0.11px;
+            margin-bottom: 40px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 60px;
+            background: #fff;
+            border-radius: 10px;
+            width: 220px;
+            text-decoration: none;
+            color: #000;
+            text-transform: uppercase;
+            font-size: 20px;
+            line-height: 100%;
+            font-weight: 700;
+            letter-spacing: 0.15px;
+            transition: 0.3s;
+
+            &:hover {
+                background: #A51F7A;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.waystogive {
+    padding: 90px 0 75px;
+
+    h2 {
+        margin-bottom: 56px;
+        font-size: 48px;
+        line-height: 105%;
+    }
+}
+
+.waystogive__item {
+    position: relative;
+    min-height: 397px;
+    margin-bottom: 26px;
+    padding: 30px;
+    box-shadow: 0px 2.98px 2.98px 0px rgba(0, 0, 0, 0.2509803922);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .topline {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 9px;
+        width: 100%;
+        background: #999;
+    }
+
+    .descr {
+        h4 {
+            margin-bottom: 24px;
+            font-size: 28px;
+            line-height: 110%;
+            letter-spacing: 0.11px;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 160%;
+        }
+    }
+
+    a {
+        display: inline-flex;
+        max-width: 100%;
+        width: 221px;
+        min-height: 60px;
+        border-radius: 10px;
+    }
+}
