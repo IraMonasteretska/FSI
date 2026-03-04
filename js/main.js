@@ -134,27 +134,30 @@ $(document).ready(function () {
 
 
     // hero responsive
-    // if ($(window).width() < 992) {
-    //     $('.quicklinks__list li').on('click', function () {
-    //         var $current = $(this);
-    //         var isOpen = $current.find('.quickinfo').hasClass('active');
+    $('.gethelp button').click(function () {
+        $('.quickinfo').toggleClass('show')
+    })
+     $('.closebtn').click(function () {
+        $('.quickinfo').removeClass('show')
+    })
 
-    //         $('.quicklinks__list li').find('.quickinfo').removeClass('active');
+    $(document).click(function (event) {
+        let $target = $(event.target);
+        if (!$target.closest('.gethelp').length) {
+            $('.quickinfo').removeClass('show')
+        }
+    });
 
-    //         if (!isOpen) {
-    //             $current.find('.quickinfo').addClass('active');
-    //         }
-    //     });
-    // }
+    
 
     // accordeon 
-   $('.hl-acc__header').on('click', function () {
-    $('.hl-acc__header').not(this).removeClass('active');
-    $('.hl-acc__body').not($(this).next()).slideUp();
-    $(this).toggleClass('active');
-    $(this).next('.hl-acc__body').slideToggle();
+    $('.hl-acc__header').on('click', function () {
+        $('.hl-acc__header').not(this).removeClass('active');
+        $('.hl-acc__body').not($(this).next()).slideUp();
+        $(this).toggleClass('active');
+        $(this).next('.hl-acc__body').slideToggle();
 
-});
+    });
 
 
 

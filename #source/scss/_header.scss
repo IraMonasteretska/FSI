@@ -255,6 +255,12 @@ header.header {
         text-decoration: none;
         line-height: 40px;
         border-bottom: 2px solid #0A85BE;
+        transition: 0.3s;
+
+        &:hover {
+            color: #a51f7a;
+            border-bottom: 2px solid #a51f7a;
+        }
     }
 
     ul {
@@ -268,6 +274,11 @@ header.header {
             font-weight: 500;
             line-height: 140%;
             text-decoration: none;
+            transition: 0.3s;
+
+            &:hover {
+                color: #A51F7A;
+            }
         }
     }
 }
@@ -657,6 +668,8 @@ header.header {
 
         .grid-item, .grid-sizer {
             position: relative !important;
+            left: initial !important;
+            top: initial !important;
         }
     }
 

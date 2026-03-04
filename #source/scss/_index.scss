@@ -73,7 +73,8 @@
         padding: 0 28px;
         margin-bottom: 11px;
 
-        a {
+        &>a,
+        &>button {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -87,6 +88,9 @@
             letter-spacing: 0.15px;
             text-decoration: none;
             transition: 0.3s;
+            border: none;
+            width: 100%;
+            cursor: pointer;
 
             &:hover {
                 background: #5C2F92;
@@ -109,12 +113,12 @@
             margin-bottom: 0;
         }
 
-        &:hover .quickinfo {
-            opacity: 1;
-            z-index: 1;
-            visibility: visible;
-            transform: translateX(0);
-        }
+        // &:hover .quickinfo {
+        //     opacity: 1;
+        //     z-index: 1;
+        //     visibility: visible;
+        //     transform: translateX(0);
+        // }
     }
 
     &>li>a {
@@ -164,12 +168,17 @@
     overflow: hidden;
     width: calc(100% - 372px);
     left: 384px;
-    display: flex;
+    display: none;
     flex-wrap: wrap;
-    opacity: 0;
-    z-index: -1;
-    visibility: hidden;
-    transition: 0.3s;
+    // opacity: 0;
+    // z-index: -1;
+    // visibility: hidden;
+    // transition: 0.3s;
+
+
+    &.show {
+        display: flex;
+    }
 
     h4 {
         font-weight: 700;
@@ -774,6 +783,10 @@
     cursor: pointer;
 }
 
+.closebtn {
+    display: none;
+}
+
 @media(max-width:1399.8px) {
 
     .hero {
@@ -848,7 +861,8 @@
 
 
     .hero__text p,
-    .quicklinks__body .gethelp a {
+    .quicklinks__body .gethelp>a,
+    .quicklinks__body .gethelp>button {
         font-size: 24px;
     }
 
@@ -1058,7 +1072,8 @@
         font-size: 21px;
     }
 
-    .quicklinks__body .gethelp a {
+    .quicklinks__body .gethelp>a,
+    .quicklinks__body .gethelp>button {
         font-size: 18px;
     }
 
@@ -1133,8 +1148,24 @@
         padding: 40px 0;
     }
 
+    .quickinfo {
+        width: 100%;
+        left: 0;
+        top: 0;
+        z-index: 2;
+    }
 
-
+    .closebtn {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        background: transparent;
+        padding: 0;
+        border: none;
+    }
 
 }
 
@@ -1178,6 +1209,26 @@
         width: 100%;
         right: 0;
         height: auto;
+    }
+
+    .quickinfo {
+        width: calc(100% - 20px);
+        left: 10px;
+    }
+}
+
+@media(max-width:480px) {
+
+    .quickinfo__whitesect,
+    .quickinfo__bluesect {
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .closebtn {
+        filter: invert(1);
+        opacity: 0.8;
     }
 }
 
