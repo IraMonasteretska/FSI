@@ -74,10 +74,10 @@ $(document).ready(function () {
             // nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
-        // autoplay: {
-        //     delay: 5000,
-        //     disableOnInteraction: false,
-        // },
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
         // mousewheel: {
         //     enabled: true,
         //     sensitivity: 1,      
@@ -137,7 +137,7 @@ $(document).ready(function () {
     $('.gethelp button').click(function () {
         $('.quickinfo').toggleClass('show')
     })
-     $('.closebtn').click(function () {
+    $('.closebtn').click(function () {
         $('.quickinfo').removeClass('show')
     })
 
@@ -148,7 +148,7 @@ $(document).ready(function () {
         }
     });
 
-    
+
 
     // accordeon 
     $('.hl-acc__header').on('click', function () {
@@ -157,6 +157,38 @@ $(document).ready(function () {
         $(this).toggleClass('active');
         $(this).next('.hl-acc__body').slideToggle();
 
+    });
+
+    // programs slider
+    var swiper = new Swiper(".programs-slider", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        speed: 700,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        // autoplay: {
+        //     delay: 5000,
+        //     disableOnInteraction: false,
+        // },
+        // mousewheel: {
+        //     enabled: true,
+        //     sensitivity: 1,      
+        //     releaseOnEdges: true
+        // },
+        breakpoints: {
+            576: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            
+            992: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+        },
     });
 
 

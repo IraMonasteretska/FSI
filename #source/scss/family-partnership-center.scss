@@ -35,7 +35,7 @@
 .textssection {
     padding: 60px 0 40px;
 
-    h3 {
+    h3, h2 {
         margin-bottom: 16px;
     }
 
@@ -44,9 +44,27 @@
         line-height: 160%;
         margin-bottom: 16px;
 
+        a {
+            color: #000;
+            text-decoration: none;
+            font-weight: 700;
+            transition: 0.3s;
+
+            &:hover {
+                color: #A51F7A;
+            }
+        }
+
         &:last-child {
             margin-bottom: 0;
         }
+    }
+
+    h5 {
+        font-size: 24px;
+        line-height: 140%;
+        font-weight: 500;
+        margin: 0;
     }
 }
 
