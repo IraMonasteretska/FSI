@@ -9,7 +9,10 @@
     <!-- <link rel="icon" type="image/x-icon" href="favicon.png"> -->
     <link rel="stylesheet" href="css/lib/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/lib/swiper.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <!-- --- -->
+    <link rel="stylesheet" href="css/lib/select2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.8.1/nouislider.css">
+    <!-- --- -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -269,12 +272,12 @@
                         <!-- <img src="img/familypartnership/filter.png" alt="img"> -->
                         <div class="filterheader">
                             <div class="row g-0">
-                                <div class="col-lg-5">
+                                <div class="col-md-5">
                                     <div class="inputfield">
                                         <input type="text" placeholder="Keywords">
                                     </div>
                                 </div>
-                                <div class="col-lg-5">
+                                <div class="col-md-5">
                                     <div class="inputfield">
                                         <input type="text" placeholder="Location">
                                         <a href="#" class="filternavbtn">
@@ -282,12 +285,15 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="col-lg-2">
+                                <div class="col-md-2">
                                     <button class="searchbtn">Search</button>
                                 </div>
                             </div>
                         </div>
                         <div class="filterbody">
+                            <button class="showfilter">
+                                Filter
+                            </button>
                             <div class="filter__sidebar">
                                 <div class="radioblock">
                                     <ul>
@@ -307,9 +313,289 @@
                                         </li>
                                     </ul>
                                 </div>
+                                <div class="hourlyrate">
+                                    <p>
+                                        Hourly Rate
+                                    </p>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <input type="number" class="min-value" value="15" />
+                                        </div>
+                                        <div class="col-6">
+                                            <input type="number" class="max-value" value="25" />
+                                        </div>
+                                    </div>
+                                    <div class="double-handle-slider"></div>
+                                </div>
+                                <div class="fltinpts">
+                                    <div class="wrppr">
+                                        <p>
+                                            Availability
+                                        </p>
+                                        <div class="sortbyselect">
+                                            <select name="" id="" class="styledselect" data-placeholder="">
+                                                <option value="1">1 Day</option>
+                                                <option value="2">2 Day</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="wrppr">
+                                        <p>
+                                            Warranty
+                                        </p>
+                                        <div class="sortbyselect">
+                                            <select name="" id="" class="styledselect" data-placeholder="">
+                                                <option value="1">Full</option>
+                                                <option value="2">Limited</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <input type="submit" value="Filter" class="sbmbtn">
+                                </div>
+
+                                <img class="map" src="img/familypartnership/map.png" alt="">
                             </div>
                             <div class="filter__content">
+                                <div class="sortbyrow">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <p>
+                                                Showing 1-6 of 6 results
+                                            </p>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="sortby">
+                                                <p>
+                                                    Sort by
+                                                </p>
+                                                <div class="sortbyselect">
+                                                    <select name="" id="" class="styledselect" data-placeholder="">
+                                                        <option value="1">Date</option>
+                                                        <option value="2">Title</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="fltitem">
+                                            <a href="#" class="imgwrap">
+                                                <img src="img/familypartnership/filterpic1.jpg" alt="img">
+                                            </a>
+                                            <div class="fltitem__descr">
+                                                <div class="labelsbox">
+                                                    <div class="lbl">
+                                                        Services
+                                                    </div>
+                                                </div>
+                                                <p class="title"><a href="#">House cleaning services</a></p>
+                                                <a href="#" class="loc">
+                                                    <img src="img/familypartnership/maps-and-flags.png" alt="img">
+                                                    446-400 Cabrini Blvd, New York, NY
+                                                </a>
+                                                <p class="added">Added on 11/17/2021</p>
+                                                <div class="rating">
+                                                    <div class="stars">
+                                                        <img src="img/familypartnership/star.png" alt="star">
+                                                        <img src="img/familypartnership/star.png" alt="star">
+                                                        <img src="img/familypartnership/star.png" alt="star">
+                                                        <img src="img/familypartnership/star.png" alt="star">
+                                                        <img src="img/familypartnership/star.png" alt="star">
+                                                    </div>
+                                                    <a href="#">4.0 <span>(2)</span></a>
+                                                </div>
+                                                <div class="row avtext">
+                                                    <div class="col-lg-6">
+                                                        <p><b>Availability:</b> 2 Days</p>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <p><b>Warranty:</b> Full</p>
+                                                    </div>
+                                                </div>
 
+                                            </div>
+                                            <div class="fltitem__footer">
+                                                <div class="row">
+                                                    <div class="col-sm-7">
+                                                        <p>$20 / hr</p>
+                                                    </div>
+                                                    <div class="col-sm-5">
+                                                        <div class="fltitem-icons">
+                                                            <a href="#"><img src="img/familypartnership/like.png"
+                                                                    alt="icon"></a>
+                                                            <a href="#"><img src="img/familypartnership/chat.png"
+                                                                    alt="icon"></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="fltitem">
+                                            <a href="#" class="imgwrap">
+                                                <img src="img/familypartnership/filterpic1.jpg" alt="img">
+                                            </a>
+                                            <div class="fltitem__descr">
+                                                <div class="labelsbox">
+                                                    <div class="lbl">
+                                                        Services
+                                                    </div>
+                                                </div>
+                                                <p class="title"><a href="#">House cleaning services</a></p>
+                                                <a href="#" class="loc">
+                                                    <img src="img/familypartnership/maps-and-flags.png" alt="img">
+                                                    446-400 Cabrini Blvd, New York, NY
+                                                </a>
+                                                <p class="added">Added on 11/17/2021</p>
+                                                <div class="rating">
+                                                    <div class="stars">
+                                                        <img src="img/familypartnership/star.png" alt="star">
+                                                        <img src="img/familypartnership/star.png" alt="star">
+                                                        <img src="img/familypartnership/star.png" alt="star">
+                                                        <img src="img/familypartnership/star.png" alt="star">
+                                                        <img src="img/familypartnership/star.png" alt="star">
+                                                    </div>
+                                                    <a href="#">4.0 <span>(2)</span></a>
+                                                </div>
+                                                <div class="row avtext">
+                                                    <div class="col-lg-6">
+                                                        <p><b>Availability:</b> 2 Days</p>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <p><b>Warranty:</b> Full</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="fltitem__footer">
+                                                <div class="row">
+                                                    <div class="col-sm-7">
+                                                        <p>$20 / hr</p>
+                                                    </div>
+                                                    <div class="col-sm-5">
+                                                        <div class="fltitem-icons">
+                                                            <a href="#"><img src="img/familypartnership/like.png"
+                                                                    alt="icon"></a>
+                                                            <a href="#"><img src="img/familypartnership/chat.png"
+                                                                    alt="icon"></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="fltitem">
+                                            <a href="#" class="imgwrap">
+                                                <img src="img/familypartnership/filterpic1.jpg" alt="img">
+                                            </a>
+                                            <div class="fltitem__descr">
+                                                <div class="labelsbox">
+                                                    <div class="lbl">
+                                                        Services
+                                                    </div>
+                                                </div>
+                                                <p class="title"><a href="#">House cleaning services</a></p>
+                                                <a href="#" class="loc">
+                                                    <img src="img/familypartnership/maps-and-flags.png" alt="img">
+                                                    446-400 Cabrini Blvd, New York, NY
+                                                </a>
+                                                <p class="added">Added on 11/17/2021</p>
+                                                <div class="rating">
+                                                    <div class="stars">
+                                                        <img src="img/familypartnership/star.png" alt="star">
+                                                        <img src="img/familypartnership/star.png" alt="star">
+                                                        <img src="img/familypartnership/star.png" alt="star">
+                                                        <img src="img/familypartnership/star.png" alt="star">
+                                                        <img src="img/familypartnership/star.png" alt="star">
+                                                    </div>
+                                                    <a href="#">4.0 <span>(2)</span></a>
+                                                </div>
+                                                <div class="row avtext">
+                                                    <div class="col-lg-6">
+                                                        <p><b>Availability:</b> 2 Days</p>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <p><b>Warranty:</b> Full</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="fltitem__footer">
+                                                <div class="row">
+                                                    <div class="col-sm-7">
+                                                        <p>$20 / hr</p>
+                                                    </div>
+                                                    <div class="col-sm-5">
+                                                        <div class="fltitem-icons">
+                                                            <a href="#"><img src="img/familypartnership/like.png"
+                                                                    alt="icon"></a>
+                                                            <a href="#"><img src="img/familypartnership/chat.png"
+                                                                    alt="icon"></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="fltitem">
+                                            <a href="#" class="imgwrap">
+                                                <img src="img/familypartnership/filterpic1.jpg" alt="img">
+                                            </a>
+                                            <div class="fltitem__descr">
+                                                <div class="labelsbox">
+                                                    <div class="lbl">
+                                                        Services
+                                                    </div>
+                                                </div>
+                                                <p class="title"><a href="#">House cleaning services</a></p>
+                                                <a href="#" class="loc">
+                                                    <img src="img/familypartnership/maps-and-flags.png" alt="img">
+                                                    446-400 Cabrini Blvd, New York, NY
+                                                </a>
+                                                <p class="added">Added on 11/17/2021</p>
+                                                <div class="rating">
+                                                    <div class="stars">
+                                                        <img src="img/familypartnership/star.png" alt="star">
+                                                        <img src="img/familypartnership/star.png" alt="star">
+                                                        <img src="img/familypartnership/star.png" alt="star">
+                                                        <img src="img/familypartnership/star.png" alt="star">
+                                                        <img src="img/familypartnership/star.png" alt="star">
+                                                    </div>
+                                                    <a href="#">4.0 <span>(2)</span></a>
+                                                </div>
+                                                <div class="row avtext">
+                                                    <div class="col-lg-6">
+                                                        <p><b>Availability:</b> 2 Days</p>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <p><b>Warranty:</b> Full</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="fltitem__footer">
+                                                <div class="row">
+                                                    <div class="col-sm-7">
+                                                        <p>$20 / hr</p>
+                                                    </div>
+                                                    <div class="col-sm-5">
+                                                        <div class="fltitem-icons">
+                                                            <a href="#"><img src="img/familypartnership/like.png"
+                                                                    alt="icon"></a>
+                                                            <a href="#"><img src="img/familypartnership/chat.png"
+                                                                    alt="icon"></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -461,6 +747,11 @@
 
 <script src="js/lib/jquery.js"></script>
 <script src="js/lib/swiper.js"></script>
+<!-- -- -->
+<script src="js/lib/select2.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.8.1/nouislider.min.js"></script>
+
+<!-- --- -->
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 <script src="js/main.js"></script>
 
