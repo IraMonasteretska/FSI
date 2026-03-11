@@ -402,6 +402,7 @@
     /* 16:9 = 9/16 = 0.5625 */
     height: 0;
     overflow: hidden;
+    margin-bottom: 20px;
 }
 
 .videowrapper iframe {
@@ -422,7 +423,7 @@
         letter-spacing: 0.11px;
     }
 
-    padding-bottom: 70px;
+    padding-bottom: 50px;
 }
 
 .infosection__wrap {
