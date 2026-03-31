@@ -298,8 +298,6 @@ header.header {
     }
 }
 
-
-
 .grid-sizer,
 .grid-item {
     width: 20%;
@@ -318,6 +316,37 @@ header.header {
     .header__topbox {
         display: none;
     }
+}
+
+// --------------------------
+.header__logo {
+    margin-bottom: 24px;
+}
+
+.header__topbox {
+    margin-bottom: 17px;
+}
+
+.megamenu__item .mainlink {
+    font-size: 18px;
+}
+
+.megamenu__item ul a {
+    font-size: 16px;
+}
+
+.grid-item,
+.grid-sizer {
+    padding: 0 15px;
+}
+
+@media(max-width:1600.8px) {
+
+    .header__nav>ul>li>a {
+        font-size: 18px;
+    }
+
+
 }
 
 @media(max-width:1399.8px) {
@@ -402,12 +431,12 @@ header.header {
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        width: 44px;
-        height: 44px;
-        border-radius: 50%;
-        background: #5C2F92;
+        width: 32px;
+        height: 32px;
+        // border-radius: 50%;
+        // background: #5C2F92;
         vertical-align: middle;
-        margin-left: 20px;
+        margin-left: 12px;
     }
 
     button.burger {
@@ -434,7 +463,7 @@ header.header {
                 border-radius: 100px;
                 position: absolute;
                 display: block;
-                background: #fff;
+                background: #512E84;
                 right: 0;
 
             }
@@ -464,7 +493,7 @@ header.header {
 
                 &:before {
                     content: "";
-                    background: #fff;
+                    background: #512E84;
                     width: 100%;
                     height: 2px;
                     border-radius: 100px;
@@ -636,8 +665,7 @@ header.header {
     .header__topbox {
 
         .header__donate,
-        .header__language,
-        .header__escape {
+        .header__language {
             display: none;
         }
     }
@@ -666,7 +694,8 @@ header.header {
             height: auto !important;
         }
 
-        .grid-item, .grid-sizer {
+        .grid-item,
+        .grid-sizer {
             position: relative !important;
             left: initial !important;
             top: initial !important;
@@ -682,10 +711,29 @@ header.header {
         margin-bottom: 20px;
     }
 
-    .megamenu  {
+    .megamenu {
         padding-left: 15px;
         padding-bottom: 15px;
         display: none;
+    }
+
+
+    .header__logo img {
+        width: 120px;
+    }
+
+    .header__escape {
+        font-size: 17px;
+        padding: 2px 18px;
+        margin-left: 0;
+    }
+
+}
+
+@media(max-width:360px) {
+    .header__escape {
+        font-size: 14px;
+        padding: 2px 15px;
     }
 }
 

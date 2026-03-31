@@ -256,6 +256,19 @@
     }
 }
 
+// -----------------------
+.footer__item .title {
+    margin-bottom: 8px;
+}
+
+.footer__item {
+    margin-bottom: 30px;
+}
+
+
+
+
+
 @media(max-width:1399.8px) {
 
     .footer__social ul li img {
@@ -327,5 +340,28 @@
                 margin-bottom: 10px;
             }
         }
+    }
+
+    .footer__social ul li {
+        font-size: 15px;
+        letter-spacing: 0.11px;
+
+    }
+
+    .footer__social ul li:first-child {
+        width: auto;
+        margin-bottom: 0;
+    }
+
+    .footer__social ul li img {
+        max-height: 24px;
+    }
+
+    .footer__body {
+        padding-bottom: 160px;
+    }
+
+    .footer__topline {
+        padding-top: 24px;
     }
 }

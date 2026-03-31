@@ -203,68 +203,74 @@ $(document).ready(function () {
         });
     }
 
+    if ($('.double-handle-slider').length > 0) {
+        ; (function () {
 
-    ; (function () {
-
-        var doubleHandleSlider = document.querySelector('.double-handle-slider');
-        var minValInput = document.querySelector('.min-value');
-        var maxValInput = document.querySelector('.max-value');
+            var doubleHandleSlider = document.querySelector('.double-handle-slider');
+            var minValInput = document.querySelector('.min-value');
+            var maxValInput = document.querySelector('.max-value');
 
 
-        noUiSlider.create(doubleHandleSlider, {
-            start: [15, 25],
-            connect: true,
-            // tooltips: true,
-            step: 1,
-            range: {
-                'min': [15],
-                'max': [40]
-            },
-            format: {
-                to: function (value) {
-                    return value;
+            noUiSlider.create(doubleHandleSlider, {
+                start: [15, 25],
+                connect: true,
+                // tooltips: true,
+                step: 1,
+                range: {
+                    'min': [15],
+                    'max': [40]
                 },
-                from: function (value) {
-                    return value;
+                format: {
+                    to: function (value) {
+                        return value;
+                    },
+                    from: function (value) {
+                        return value;
+                    }
                 }
-            }
-        });
+            });
 
-        // can also be on 'update' for instant update
-        doubleHandleSlider.noUiSlider.on('change', function (values, handle) {
+            // can also be on 'update' for instant update
+            doubleHandleSlider.noUiSlider.on('change', function (values, handle) {
 
-            // This version updates both inputs.
-            var rangeValues = values;
-            minValInput.value = rangeValues[0];
-            maxValInput.value = rangeValues[1];
+                // This version updates both inputs.
+                var rangeValues = values;
+                minValInput.value = rangeValues[0];
+                maxValInput.value = rangeValues[1];
 
-            /*		
-                    // This version updates a single input on change
-                    var val = values[handle]; // 0 or 1
-                	
-                    if(handle) {
-                        maxValInput.value = Math.round(val);
-                    } else {
-                        minValInput.value = Math.round(val);
-                    }*/
-        });
-
-
-        minValInput.addEventListener('change', function () {
-            doubleHandleSlider.noUiSlider.set([this.value, null]);
-        });
-
-        maxValInput.addEventListener('change', function () {
-            doubleHandleSlider.noUiSlider.set([null, this.value]);
-        });
+                /*		
+                        // This version updates a single input on change
+                        var val = values[handle]; // 0 or 1
+                    	
+                        if(handle) {
+                            maxValInput.value = Math.round(val);
+                        } else {
+                            minValInput.value = Math.round(val);
+                        }*/
+            });
 
 
-    })();
+            minValInput.addEventListener('change', function () {
+                doubleHandleSlider.noUiSlider.set([this.value, null]);
+            });
 
-    $('.showfilter').click(function(){
+            maxValInput.addEventListener('change', function () {
+                doubleHandleSlider.noUiSlider.set([null, this.value]);
+            });
+
+
+        })();
+    }
+
+    $('.showfilter').click(function () {
         $('.filter__sidebar').toggle();
     })
 
+    if ($('[data-fancybox]').length > 0) {
+        Fancybox.bind("[data-fancybox]", {
+            // Your custom options
+        });
+    }
 
 
 })
