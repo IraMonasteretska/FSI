@@ -846,6 +846,7 @@
 }
 
 @media(min-width:1512px) {
+
     .teenprograms h3,
     .located h3 {
         font-size: 50px;
@@ -1486,6 +1487,19 @@
     .quickinfo {
         width: 100%;
         left: 0;
+    }
+
+    .events,
+    .located {
+        padding-top: 44px;
+    }
+
+    .teenprograms {
+        padding-bottom: 44px;
+    }
+
+    .located__map img {
+        vertical-align: top;
     }
 }
 
