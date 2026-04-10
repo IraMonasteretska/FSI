@@ -19,10 +19,17 @@
 .hero__bg {
     position: absolute;
     bottom: 0;
-    right: 87px;
+    // right: 87px;
+    right: calc((100vw - 1240px) / 2);
     width: 100%;
     z-index: 1;
-    max-width: 603px;
+    max-width: 630px;
+    margin-right: 0;
+
+    img {
+        vertical-align: top;
+        width: 100%;
+    }
 }
 
 .hero__text {
@@ -165,7 +172,7 @@
     height: auto;
     min-height: 100%;
     overflow: hidden;
-    width: calc(100% - 372px);
+    width: calc(100% - 394px);
     left: 384px;
     display: none;
     flex-wrap: wrap;
@@ -250,7 +257,7 @@
     max-width: 63%;
     flex: 0 0 63%;
     background: #0A85BE;
-    padding: 39px 28px 20px;
+    padding: 39px 40px 20px;
 
     h4 {
         color: #fff;
@@ -338,11 +345,22 @@
 
 .events__wrapper {
     position: relative;
-    padding-left: calc((100vw - 1240px)/2);
+    // padding-left: calc((100vw - 1240px)/2);
 }
 
 .swiper-button-prev.event-prev {
-    left: calc((100vw - 1340px)/2);
+    // left: calc((100vw - 1340px)/2);
+    left: -55px;
+    width: 25px;
+    height: 57px;
+
+    svg {
+        display: none;
+    }
+}
+
+.swiper-button-next.event-next {
+    right: -55px;
     width: 25px;
     height: 57px;
 
@@ -876,7 +894,7 @@
 
     .events__wrapper {
         position: relative;
-        padding-left: calc((100vw - 1120px) / 2);
+        // padding-left: calc((100vw - 1120px) / 2);
     }
 
     .teenprograms h2:after,
@@ -899,7 +917,12 @@
     }
 
     .swiper-button-prev.event-prev {
-        left: calc((100vw - 1230px) / 2);
+        // left: calc((100vw - 1230px) / 2);
+        left: -40px;
+    }
+
+    .swiper-button-next.event-next {
+        right: -40px;
     }
 
     .quickinfo__whitesect {
@@ -952,11 +975,29 @@
     .quicklinks__header p {
         font-size: 16px;
     }
+
+
+    .hero__bg {
+        right: calc((100vw - 1120px) / 2);
+    }
+
+    .swiper {
+        padding-right: 10px;
+    }
+
 }
 
 @media(max-width:1250.8px) {
+
+    // .swiper-button-prev.event-prev {
+    //     left: calc((100vw - 1185px) / 2);
+    // }
     .swiper-button-prev.event-prev {
-        left: calc((100vw - 1185px) / 2);
+        left: -30px;
+    }
+
+    .swiper-button-next.event-next {
+        right: -30px;
     }
 }
 
@@ -986,12 +1027,14 @@
 
     .events__wrapper {
         position: relative;
-        padding-left: calc((100vw - 940px) / 2);
+        // padding-left: calc((100vw - 940px) / 2);
     }
 
     .swiper-button-prev.event-prev {
-        left: calc((100vw - 1040px) / 2);
+        // left: calc((100vw - 1040px) / 2);
     }
+
+
 
     .teenprograms p {
         margin-bottom: 20px;
@@ -1044,6 +1087,7 @@
 
     .hero__bg {
         max-width: 500px;
+        right: calc((100vw - 940px) / 2);
     }
 
     .hero {
@@ -1054,8 +1098,16 @@
 }
 
 @media(max-width:1050.8px) {
+    // .swiper-button-prev.event-prev {
+    //     left: calc((100vw - 990px) / 2);
+    // }
+
     .swiper-button-prev.event-prev {
-        left: calc((100vw - 990px) / 2);
+        left: -25px;
+    }
+
+    .swiper-button-next.event-next {
+        right: -25px;
     }
 }
 
@@ -1124,11 +1176,19 @@
 
     .events__wrapper {
         position: relative;
-        padding-left: calc((100vw - 696px) / 2);
+        // padding-left: calc((100vw - 696px) / 2);
     }
 
+    // .swiper-button-prev.event-prev {
+    //     left: calc((100vw - 760px) / 2);
+    // }
+
     .swiper-button-prev.event-prev {
-        left: calc((100vw - 760px) / 2);
+        left: -30px;
+    }
+
+    .swiper-button-next.event-next {
+        right: -30px;
     }
 
     .events__header:after {
@@ -1162,8 +1222,9 @@
 
     .hero__bg {
         max-width: 400px;
-        right: 0;
+        right: calc((100vw - 700px) / 2);
     }
+
 
     .hero {
         max-height: 640px;
@@ -1189,11 +1250,19 @@
 
     .events__wrapper {
         position: relative;
-        padding-left: calc((100vw - 516px) / 2);
+        // padding-left: calc((100vw - 516px) / 2);
     }
 
     .swiper-button-prev.event-prev {
         display: none;
+    }
+
+    .swiper-button-next.event-next {
+        display: none;
+    }
+
+    .event-item__body .evdescription h5 {
+        word-wrap: break-word;
     }
 
     .teenprograms {
@@ -1390,8 +1459,8 @@
     }
 
     .events__wrapper {
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .teenprograms {
@@ -1500,6 +1569,10 @@
 
     .located__map img {
         vertical-align: top;
+    }
+
+    .swiper {
+        padding-right: 0;
     }
 }
 

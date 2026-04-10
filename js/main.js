@@ -71,7 +71,7 @@ $(document).ready(function () {
         loop: true,
         speed: 700,
         navigation: {
-            // nextEl: ".swiper-button-next",
+            nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
         autoplay: {
@@ -89,19 +89,19 @@ $(document).ready(function () {
                 spaceBetween: 20,
             },
             767: {
-                slidesPerView: 2.5,
+                slidesPerView: 2,
                 spaceBetween: 20,
             },
-            991: {
+            992: {
                 slidesPerView: 3,
                 spaceBetween: 20,
             },
             1200: {
-                slidesPerView: 3.5,
+                slidesPerView: 3,
                 spaceBetween: 20,
             },
             1400: {
-                slidesPerView: 4,
+                slidesPerView: 3.5,
                 spaceBetween: 20,
             },
         },

@@ -396,6 +396,9 @@ header.header {
         font-size: 16px;
     }
 
+    header .container {
+        max-width: 1200px;
+    }
 
 }
 
@@ -405,6 +408,10 @@ header.header {
     .grid-sizer {
         width: 25%;
         padding: 0 10px;
+    }
+
+    header .container {
+        max-width: 1020px;
     }
 }
 
@@ -614,6 +621,10 @@ header.header {
         position: relative;
         height: auto;
     }
+
+    header .container {
+        max-width: 720px;
+    }
 }
 
 @media(max-width:767.8px) {
@@ -648,7 +659,9 @@ header.header {
         padding: 0 10px;
     }
 
-
+    header .container {
+        max-width: 540px;
+    }
 
 
 
@@ -686,6 +699,10 @@ header.header {
             }
 
             .header__donate {
+                margin-left: 20px;
+            }
+
+            .header__escape {
                 margin-left: 10px;
             }
         }
@@ -726,6 +743,11 @@ header.header {
         font-size: 17px;
         padding: 2px 18px;
         margin-left: 0;
+    }
+
+    header .container {
+        max-width: 100%;
+        width: 100%;
     }
 
 }
