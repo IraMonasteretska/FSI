@@ -37,6 +37,7 @@
                         </div>
                         <nav class="header__nav">
                             <div class="header__topbox">
+                                <a href="#" class="header__escape">ESCAPE</a>
                                 <a href="#" class="header__donate">Donate</a>
                                 <div class="header__language">
                                     <span>EN</span>
@@ -377,7 +378,10 @@
                         </div>
                     </div>
                 </div>
-                <img class="hero__bg" src="img/main/hero-img1.png" alt="hero image">
+                <picture class="hero__bg">
+                    <source srcset="img/main/hero-img1.png" media="(max-width: 575px)">
+                    <img src="img/main/herodesktop.png" alt="image">
+                </picture>
 
             </div>
 
@@ -390,230 +394,236 @@
                         <p>Scroll to explore</p>
                     </div>
                 </div>
-                <div class="events__wrapper">
-                    <div class="swiper event-slider">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="event-item event-item__calendar">
-                                    <span class="event-item__topline" style="background: #A51F7A;"></span>
-                                    <div class="event-item__header">
-                                        <h5 class="purple-color">June 2025</h5>
-                                    </div>
-                                    <div class="event-item__body">
-                                        <div class="calendarbox">
-                                            <a href="#" class="calendarbox__item">
-                                                <div class="edate">
-                                                    <p>
-                                                        <span>JUN</span>
-                                                        08
-                                                    </p>
-                                                </div>
-                                                <div class="einfo">
-                                                    <p class="evtime">
-                                                        4:00 PM
-                                                    </p>
-                                                    <p class="evname">
-                                                        Event Name
-                                                        <span>Location Address</span>
-                                                    </p>
-                                                </div>
-                                            </a>
-                                            <a href="#" class="calendarbox__item">
-                                                <div class="edate">
-                                                    <p>
-                                                        <span>JUN</span>
-                                                        19
-                                                    </p>
-                                                </div>
-                                                <div class="einfo">
-                                                    <p class="evtime">
-                                                        10:00 AM
-                                                    </p>
-                                                    <p class="evname">
-                                                        Event Name
-                                                        <span>Location Address</span>
-                                                    </p>
-                                                </div>
-                                            </a>
-                                            <a href="#" class="calendarbox__item">
-                                                <div class="edate">
-                                                    <p>
-                                                        <span>JUN</span>
-                                                        29
-                                                    </p>
-                                                </div>
-                                                <div class="einfo">
-                                                    <p class="evtime">
-                                                        3:00 PM
-                                                    </p>
-                                                    <p class="evname">
-                                                        Event Name
-                                                        <span>Location Address</span>
-                                                    </p>
-                                                </div>
-                                            </a>
-                                            <a href="#" class="calendarbox__item">
-                                                <div class="edate">
-                                                    <p>
-                                                        <span>JUL</span>
-                                                        04
-                                                    </p>
-                                                </div>
-                                                <div class="einfo">
-                                                    <p class="evtime">
-                                                        12:00 PM
-                                                    </p>
-                                                    <p class="evname">
-                                                        Event Name
-                                                        <span>Location Address</span>
-                                                    </p>
-                                                </div>
-                                            </a>
+                <div class="container">
+                    <div class="events__wrapper">
+                        <div class="swiper event-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="event-item event-item__calendar">
+                                        <span class="event-item__topline" style="background: #A51F7A;"></span>
+                                        <div class="event-item__header">
+                                            <h5 class="purple-color">June 2025</h5>
+                                        </div>
+                                        <div class="event-item__body">
+                                            <div class="calendarbox">
+                                                <a href="#" class="calendarbox__item">
+                                                    <div class="edate">
+                                                        <p>
+                                                            <span>JUN</span>
+                                                            08
+                                                        </p>
+                                                    </div>
+                                                    <div class="einfo">
+                                                        <p class="evtime">
+                                                            4:00 PM
+                                                        </p>
+                                                        <p class="evname">
+                                                            Event Name
+                                                            <span>Location Address</span>
+                                                        </p>
+                                                    </div>
+                                                </a>
+                                                <a href="#" class="calendarbox__item">
+                                                    <div class="edate">
+                                                        <p>
+                                                            <span>JUN</span>
+                                                            19
+                                                        </p>
+                                                    </div>
+                                                    <div class="einfo">
+                                                        <p class="evtime">
+                                                            10:00 AM
+                                                        </p>
+                                                        <p class="evname">
+                                                            Event Name
+                                                            <span>Location Address</span>
+                                                        </p>
+                                                    </div>
+                                                </a>
+                                                <a href="#" class="calendarbox__item">
+                                                    <div class="edate">
+                                                        <p>
+                                                            <span>JUN</span>
+                                                            29
+                                                        </p>
+                                                    </div>
+                                                    <div class="einfo">
+                                                        <p class="evtime">
+                                                            3:00 PM
+                                                        </p>
+                                                        <p class="evname">
+                                                            Event Name
+                                                            <span>Location Address</span>
+                                                        </p>
+                                                    </div>
+                                                </a>
+                                                <a href="#" class="calendarbox__item">
+                                                    <div class="edate">
+                                                        <p>
+                                                            <span>JUL</span>
+                                                            04
+                                                        </p>
+                                                    </div>
+                                                    <div class="einfo">
+                                                        <p class="evtime">
+                                                            12:00 PM
+                                                        </p>
+                                                        <p class="evname">
+                                                            Event Name
+                                                            <span>Location Address</span>
+                                                        </p>
+                                                    </div>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="event-item event-item__listlinks">
-                                    <span class="event-item__topline" style="background: #FBB12E;"></span>
-                                    <div class="event-item__header">
-                                        <h5 class="purple-color">Mental Health <br>Services</h5>
-                                        <p>
-                                            As one of the leading provers of therapy in the Hudson Valley we’re here to
-                                            help you when you’re ready.
-                                        </p>
-                                    </div>
-                                    <div class="event-item__body">
-                                        <ul class="evlistlinks">
-                                            <li>
-                                                <a href="#">
-                                                    Book an appointment
-                                                    <img src="img/main/arrows.svg" alt="icon">
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    Dutchess County
-                                                    <img src="img/main/arrows.svg" alt="icon">
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    Orange County
-                                                    <img src="img/main/arrows.svg" alt="icon">
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    Ulster County
-                                                    <img src="img/main/arrows.svg" alt="icon">
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="event-item event-item__listlinks">
-                                    <span class="event-item__topline" style="background: #0A85BE;"></span>
-                                    <div class="event-item__header imagebg shadow">
-                                        <img src="img/main/event1.jpg" alt="img">
-                                        <h5 class="white-color">Family Partnership Center (FPC)</h5>
-                                    </div>
-                                    <div class="event-item__body">
-                                        <ul class="evlistlinks">
-                                            <li>
-                                                <a href="#">
-                                                    Plan your visit (parking & floorplans)
-                                                    <img src="img/main/arrows.svg" alt="icon">
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    List of services in FPC
-                                                    <img src="img/main/arrows.svg" alt="icon">
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    About our spaces for Events
-                                                    <img src="img/main/arrows.svg" alt="icon">
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    Find out about commercial leasing
-                                                    <img src="img/main/arrows.svg" alt="icon">
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="event-item event-item__listlinks">
-                                    <span class="event-item__topline" style="background: #A51F7A;"></span>
-                                    <div class="event-item__header imagebg">
-                                        <img src="img/main/event2.jpg" alt="img">
-                                    </div>
-                                    <div class="event-item__body">
-                                        <div class="evdescription">
-                                            <h5 class="purple-color">#Righttomentalhealth</h5>
+                                <div class="swiper-slide">
+                                    <div class="event-item event-item__listlinks">
+                                        <span class="event-item__topline" style="background: #FBB12E;"></span>
+                                        <div class="event-item__header">
+                                            <h5 class="purple-color">Mental Health <br>Services</h5>
                                             <p>
-                                                It’s Time to Talk About Mental Health shares real stories that open
-                                                minds, break stigma and show the power of connection and healing.
+                                                As one of the leading provers of therapy in the Hudson Valley we’re here
+                                                to
+                                                help you when you’re ready.
                                             </p>
-                                            <a href="#" class="purple-color">Watch now</a>
+                                        </div>
+                                        <div class="event-item__body">
+                                            <ul class="evlistlinks">
+                                                <li>
+                                                    <a href="#">
+                                                        Book an appointment
+                                                        <img src="img/main/arrows.svg" alt="icon">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Dutchess County
+                                                        <img src="img/main/arrows.svg" alt="icon">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Orange County
+                                                        <img src="img/main/arrows.svg" alt="icon">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Ulster County
+                                                        <img src="img/main/arrows.svg" alt="icon">
+                                                    </a>
+                                                </li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="event-item event-item__listlinks">
-                                    <span class="event-item__topline" style="background: #FBB12E;"></span>
-                                    <div class="event-item__header">
-                                        <h5 class="purple-color">Mental Health <br>Services</h5>
-                                        <p>
-                                            As one of the leading provers of therapy in the Hudson Valley we’re here to
-                                            help you when you’re ready.
-                                        </p>
+                                <div class="swiper-slide">
+                                    <div class="event-item event-item__listlinks">
+                                        <span class="event-item__topline" style="background: #0A85BE;"></span>
+                                        <div class="event-item__header imagebg shadow">
+                                            <img src="img/main/event1.jpg" alt="img">
+                                            <h5 class="white-color">Family Partnership Center (FPC)</h5>
+                                        </div>
+                                        <div class="event-item__body">
+                                            <ul class="evlistlinks">
+                                                <li>
+                                                    <a href="#">
+                                                        Plan your visit (parking & floorplans)
+                                                        <img src="img/main/arrows.svg" alt="icon">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        List of services in FPC
+                                                        <img src="img/main/arrows.svg" alt="icon">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        About our spaces for Events
+                                                        <img src="img/main/arrows.svg" alt="icon">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Find out about commercial leasing
+                                                        <img src="img/main/arrows.svg" alt="icon">
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                    <div class="event-item__body">
-                                        <ul class="evlistlinks">
-                                            <li>
-                                                <a href="#">
-                                                    Book an appointment
-                                                    <img src="img/main/arrows.svg" alt="icon">
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    Dutchess County
-                                                    <img src="img/main/arrows.svg" alt="icon">
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    Orange County
-                                                    <img src="img/main/arrows.svg" alt="icon">
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    Ulster County
-                                                    <img src="img/main/arrows.svg" alt="icon">
-                                                </a>
-                                            </li>
-                                        </ul>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="event-item event-item__listlinks">
+                                        <span class="event-item__topline" style="background: #A51F7A;"></span>
+                                        <div class="event-item__header imagebg">
+                                            <img src="img/main/event2.jpg" alt="img">
+                                        </div>
+                                        <div class="event-item__body">
+                                            <div class="evdescription">
+                                                <h5 class="purple-color">#Righttomentalhealth</h5>
+                                                <p>
+                                                    It’s Time to Talk About Mental Health shares real stories that open
+                                                    minds, break stigma and show the power of connection and healing.
+                                                </p>
+                                                <a href="#" class="purple-color">Watch now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="event-item event-item__listlinks">
+                                        <span class="event-item__topline" style="background: #FBB12E;"></span>
+                                        <div class="event-item__header">
+                                            <h5 class="purple-color">Mental Health <br>Services</h5>
+                                            <p>
+                                                As one of the leading provers of therapy in the Hudson Valley we’re here
+                                                to
+                                                help you when you’re ready.
+                                            </p>
+                                        </div>
+                                        <div class="event-item__body">
+                                            <ul class="evlistlinks">
+                                                <li>
+                                                    <a href="#">
+                                                        Book an appointment
+                                                        <img src="img/main/arrows.svg" alt="icon">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Dutchess County
+                                                        <img src="img/main/arrows.svg" alt="icon">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Orange County
+                                                        <img src="img/main/arrows.svg" alt="icon">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Ulster County
+                                                        <img src="img/main/arrows.svg" alt="icon">
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="swiper-button-prev event-prev">
+                            <img src="img/main/slider-prev.svg" alt="prev">
+                        </div>
+                        <div class="swiper-button-next event-next">
+                            <img src="img/main/slider-next.svg" alt="next">
+                        </div>
                     </div>
-                    <div class="swiper-button-prev event-prev">
-                        <img src="img/main/slider-prev.svg" alt="img">
-                    </div>
-                    <!-- <div class="swiper-button-next"></div> -->
                 </div>
             </div>
 
