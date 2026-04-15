@@ -9,6 +9,8 @@
 
     h1 {
         color: #fff;
+        font-size: 72px;
+        font-weight: 600;
 
         &:last-child {
             margin-bottom: 0;
@@ -465,7 +467,9 @@
         min-height: 60px;
     }
 
-
+    .herosection h1 {
+        font-size: 46px;
+    }
 
 
 
@@ -551,6 +555,10 @@
             margin-bottom: 10px;
         }
     }
+
+    .herosection h1 {
+        font-size: 42px;
+    }
 }
 
 @media(max-width:767.8px) {
@@ -627,6 +635,10 @@
 
     .hl-acc__header p {
         font-size: 16px;
+    }
+
+    .herosection__bg {
+        object-position: 60% 50%;
     }
 
 }

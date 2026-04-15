@@ -197,32 +197,49 @@ header.header {
 }
 
 .header__donate {
-    color: #62BB46;
-    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
     font-size: 20px;
-    text-decoration: none;
+    font-weight: 700;
     letter-spacing: 0.15px;
+    background: #62BB46;
+    text-decoration: none;
+    min-height: 37px;
+    padding: 2px 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
     transition: 0.3s;
-    position: relative;
 
-    &::after {
-        content: '';
-        display: block;
-        position: absolute;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-        bottom: -2px;
-        height: 2px;
-        width: 0;
-        background: #62BB46;
-        transition: 0.3s;
-    }
+
+    // color: #62BB46;
+    // font-weight: 700;
+    // font-size: 20px;
+    // text-decoration: none;
+    // letter-spacing: 0.15px;
+    // transition: 0.3s;
+    // position: relative;
+
+    // &::after {
+    //     content: '';
+    //     display: block;
+    //     position: absolute;
+    //     left: 0;
+    //     right: 0;
+    //     margin: 0 auto;
+    //     bottom: -2px;
+    //     height: 2px;
+    //     width: 0;
+    //     background: #62BB46;
+    //     transition: 0.3s;
+    // }
 
     &:hover {
-        &::after {
-            width: 100%;
-        }
+        // &::after {
+        //     width: 100%;
+        // }
+        background: #0A85BE;
     }
 }
 
@@ -663,7 +680,12 @@ header.header {
         max-width: 540px;
     }
 
-
+    .header__donate {
+        font-size: 14px;
+        padding: 2px 15px;
+        min-height: 32px;
+        margin-left: 15px;
+    }
 
 
 
@@ -749,6 +771,16 @@ header.header {
         max-width: 100%;
         width: 100%;
     }
+
+   .header__donate {
+        font-size: 17px;
+        padding: 2px 19px;
+    }
+
+    .header__nav .header__topbox .header__donate {
+        margin-left: 10px;
+    }
+
 
 }
 
