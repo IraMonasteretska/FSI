@@ -1356,11 +1356,11 @@
         display: none;
     }
 
-    .teenprograms__images img {
-        max-width: initial;
-        width: 280px;
-        height: 240px;
-    }
+    // .teenprograms__images img {
+    //     max-width: initial;
+    //     width: 280px;
+    //     height: 240px;
+    // }
 
     .teenprograms__images {
         width: 45%;
@@ -1684,6 +1684,22 @@
     .swiper {
         padding-right: 0;
     }
+
+     .teenprograms__images {
+        width: 100%;
+        left: 0;
+        right: 0;
+        margin: 0;
+    }
+
+    .teenprograms__images {
+
+        img {
+            margin-right: -80px;
+        }
+    }
+
+  
 }
 
 @media(max-width:480px) {
@@ -1704,8 +1720,33 @@
         width: 100%;
 
         img {
-            margin-right: -27px;
+            // margin-right: -27px;
         }
+    }
+
+      .teenprograms__images {
+        height: 515px;
+
+        img {
+            margin-top: -20px;
+            // margin-right: -125px;
+        }
+    }
+
+    .teenprograms {
+        padding-top: 515px;
+    }
+
+    .teenprograms__images .teen-img3  {
+        display: none;
+    }
+
+    .teenprograms__images {
+        width: 480px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0;
+        right: initial;
     }
 
 }
