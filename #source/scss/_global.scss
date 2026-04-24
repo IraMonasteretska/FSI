@@ -65,7 +65,7 @@ h1 {
     letter-spacing: 0.15px;
 }
 
-h2 {
+h2, .titleh2 {
     color: #A51F7A;
     font-weight: 700;
     font-size: 60px;
@@ -120,7 +120,8 @@ p a {
 
     h1,
     h2,
-    .section-title {
+    .section-title,
+    .titleh2 {
         font-size: 46px;
     }
 
@@ -136,7 +137,8 @@ p a {
 @media(max-width:1199.8px) {
 
     h2,
-    .section-title {
+    .section-title,
+    .titleh2 {
         font-size: 36px;
     }
 

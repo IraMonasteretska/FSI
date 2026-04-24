@@ -26,6 +26,19 @@
             }
         }
 
+        h2 {
+            color: #fff;
+            font-size: 24px;
+            line-height: 110%;
+            font-weight: 700;
+            letter-spacing: 0.11px;
+            margin-bottom: 40px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
         h5 {
             color: #fff;
             font-size: 24px;
@@ -95,7 +108,7 @@
     }
 
     .descr {
-        h4 {
+        h4, h3 {
             margin-bottom: 24px;
             font-size: 28px;
             line-height: 110%;
@@ -152,7 +165,8 @@
         font-size: 56px;
     }
 
-    .herosection-large .herosection__info h5 {
+    .herosection-large .herosection__info h5,
+    .herosection-large .herosection__info h2 {
         font-size: 21px;
         margin-bottom: 30px;
     }
@@ -168,7 +182,8 @@
         margin-bottom: 20px;
     }
 
-    .herosection-large .herosection__info h5 {
+    .herosection-large .herosection__info h5,
+    .herosection-large .herosection__info h2 {
         font-size: 18px;
         font-weight: 600;
         margin-bottom: 30px;
@@ -179,7 +194,8 @@
         margin-bottom: 30px;
     }
 
-    .waystogive__item .descr h4 {
+    .waystogive__item .descr h4,
+    .waystogive__item .descr h3 {
         font-size: 24px;
         margin-bottom: 15px;
     }
@@ -205,7 +221,8 @@
         font-size: 32px;
     }
 
-    .herosection-large .herosection__info h5 {
+    .herosection-large .herosection__info h5,
+    .herosection-large .herosection__info h2 {
         font-weight: 500;
         font-size: 16px;
         margin-bottom: 20px;
@@ -231,7 +248,8 @@
         min-height: 370px;
     }
 
-    .waystogive__item .descr h4 {
+    .waystogive__item .descr h4,
+    .waystogive__item .descr h3 {
         font-size: 18px;
     }
 
@@ -250,7 +268,8 @@
         min-height: 300px;
     }
 
-    .waystogive__item .descr h4 {
+    .waystogive__item .descr h4,
+    .waystogive__item .descr h3 {
         font-size: 21px;
     }
 }

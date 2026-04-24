@@ -318,7 +318,7 @@
         background: #000;
     }
 
-    h2 {
+    h2, .titleh2 {
         margin: 0;
         width: 100%;
         max-width: calc(100% - 200px);
@@ -333,7 +333,7 @@
         }
     }
 
-    p {
+    p.descr {
         margin: 0;
         color: #000;
         font-weight: 700;
@@ -1558,12 +1558,12 @@
             display: none;
         }
 
-        h2 {
+        h2, .titleh2 {
             font-size: 40px;
             margin-bottom: 2px;
         }
 
-        p {
+        p.descr {
             text-align: left;
         }
     }
