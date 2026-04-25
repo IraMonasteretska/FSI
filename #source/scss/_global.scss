@@ -113,6 +113,11 @@ h5 {
 p a {
     color: #A51F7A;
     font-weight: 500;
+
+    &:hover {
+        color: #A51F7A;
+        text-decoration: none;
+    }
 }
 
 
