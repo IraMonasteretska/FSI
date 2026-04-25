@@ -170,6 +170,22 @@ p a {
     }
 }
 
+.h5 {
+    font-size: 24px;
+    line-height: 110%;
+    color: #000;
+    letter-spacing: 0.11px;
+    font-weight: 700;
+
+    &.purple-color {
+        color: #A51F7A;
+    }
+
+    &.white {
+        color: #fff;
+    }
+}
+
 
 @media(max-width:1399.8px) {
 
