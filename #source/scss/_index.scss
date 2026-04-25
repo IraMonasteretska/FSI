@@ -907,6 +907,13 @@
     display: none;
 }
 
+.event-item {
+    p.h4 {
+        position: relative;
+        z-index: 2;
+    }
+}
+
 @media(min-width:1512px) {
 
     .teenprograms h3,
