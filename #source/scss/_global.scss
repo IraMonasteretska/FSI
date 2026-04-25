@@ -123,66 +123,66 @@ p a {
 
 .h2 {
 
-    font-weight: 700;
-    font-size: 60px;
-    line-height: 105%;
-    letter-spacing: 0.15px;
-    color: #000;
+    font-weight: 700 !important;
+    font-size: 60px !important;
+    line-height: 105% !important;
+    letter-spacing: 0.15px !important;
+    color: #000 !important;
 
     &.purple-color {
-        color: #A51F7A;
+        color: #A51F7A !important;
     }
 
     &.white {
-        color: #fff;
+        color: #fff !important;
     }
 }
 
 .h3 {
-    font-size: 36px;
-    line-height: 100%;
-    font-weight: 600;
-    letter-spacing: 0.15px;
-    color: #000;
+    font-size: 36px !important;
+    line-height: 100% !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.15px !important;
+    color: #000 !important;
 
     &.purple-color {
-        color: #A51F7A;
+        color: #A51F7A !important;
     }
 
     &.white {
-        color: #fff;
+        color: #fff !important;
     }
 }
 
 .h4 {
-    font-size: 24px;
-    line-height: 110%;
-    color: #000;
-    letter-spacing: 0.11px;
-    font-weight: 600;
+    font-size: 24px !important;
+    line-height: 110% !important;
+    color: #000 !important;
+    letter-spacing: 0.11px !important;
+    font-weight: 600 !important;
 
     &.purple-color {
-        color: #A51F7A;
+        color: #A51F7A !important;
     }
 
     &.white {
-        color: #fff;
+        color: #fff !important;
     }
 }
 
 .h5 {
-    font-size: 24px;
-    line-height: 110%;
-    color: #000;
-    letter-spacing: 0.11px;
-    font-weight: 700;
+    font-size: 24px !important;
+    line-height: 110% !important;
+    color: #000 !important;
+    letter-spacing: 0.11px !important;
+    font-weight: 700 !important;
 
     &.purple-color {
-        color: #A51F7A;
+        color: #A51F7A !important;
     }
 
     &.white {
-        color: #fff;
+        color: #fff !important;
     }
 }
 
@@ -205,15 +205,15 @@ p a {
     }
 
     .h2 {
-        font-size: 46px;
+        font-size: 46px !important;
     }
 
     .h3 {
-        font-size: 28px;
+        font-size: 28px !important;
     }
 
     .h4, .h5 {
-        font-size: 21px;
+        font-size: 21px !important;
     }
 }
 
@@ -230,11 +230,11 @@ p a {
     }
 
     .h2 {
-        font-size: 36px;
+        font-size: 36px !important;
     }
 
     .h3 {
-        font-size: 24px;
+        font-size: 24px !important;
     }
 
     
@@ -252,7 +252,7 @@ p a {
     }
 
     .h2 {
-        font-size: 28px;
+        font-size: 28px !important;
     }
 
     
@@ -275,7 +275,7 @@ p a {
     }
 
     .h2 {
-        font-size: 28px;
+        font-size: 28px !important;
     }
 
 }
