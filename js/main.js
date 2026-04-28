@@ -101,7 +101,7 @@ $(document).ready(function () {
                 spaceBetween: 20,
             },
             1400: {
-                slidesPerView: 3.5,
+                slidesPerView: 3,
                 spaceBetween: 20,
             },
         },
@@ -272,5 +272,18 @@ $(document).ready(function () {
         });
     }
 
+
+    // ESCAPE
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' || e.key === 'Esc') {
+            e.preventDefault();
+            e.stopPropagation();
+
+            sessionStorage.clear();
+            localStorage.clear();
+
+            window.location.replace('https://www.google.com');
+        }
+    }, true);
 
 })
