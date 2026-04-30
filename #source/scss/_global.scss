@@ -186,6 +186,14 @@ p a {
     }
 }
 
+:focus {
+  outline: 4px solid #000;
+    transition: 0s;
+}
+
+
+
+
 
 @media(max-width:1399.8px) {
 
