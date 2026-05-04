@@ -286,4 +286,9 @@ $(document).ready(function () {
         }
     }, true);
 
+    // favorite btn
+    $('.favbtn').click(function(){
+        $(this).toggleClass('active');
+    })
+
 })

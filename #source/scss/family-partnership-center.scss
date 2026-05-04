@@ -574,6 +574,12 @@ input[type=number] {
 }
 
 // color: #0f1727a6;
+.favbtn {
+    padding: 0;
+    background: transparent;
+    border: none;
+    margin-right: 10px;
+}
 
 @media(max-width:1199.8px) {
     .fltitem .imgwrap {
