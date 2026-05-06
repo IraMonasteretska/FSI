@@ -46,7 +46,7 @@ $(document).ready(function () {
             //     $(this).toggleClass('active');
             // });
             $('.has-submenu').on('click', function (e) {
-                e.preventDefault();
+                // e.preventDefault();
 
                 var $current = $(this);
 
@@ -274,21 +274,67 @@ $(document).ready(function () {
 
 
     // ESCAPE
-    document.addEventListener('keydown', function (e) {
-        if (e.key === 'Escape' || e.key === 'Esc') {
-            e.preventDefault();
-            e.stopPropagation();
+    //     document.addEventListener('keydown', function (e) {
+    //     if (e.key === 'Escape') {
+    //         e.preventDefault();
+    //         e.stopImmediatePropagation();
 
-            sessionStorage.clear();
-            localStorage.clear();
+    //         // очищаємо дані
+    //         sessionStorage.clear();
+    //         localStorage.clear();
 
-            window.location.replace('https://www.google.com');
+    //         // замінюємо поточну історію
+    //         history.replaceState(null, '', '/');
+
+    //         // редірект на безпечний сайт
+    //         window.location.replace('https://www.google.com');
+    //     }
+    // }, true);
+
+
+    (function () {
+        var SAFE_URL = 'https://www.google.com';
+
+        function redirectNow() {
+            window.location.replace(SAFE_URL);
         }
-    }, true);
+
+        window.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                e.preventDefault();
+                e.stopImmediatePropagation();
+
+                try {
+                    sessionStorage.setItem('quickExit', 'true');
+                } catch (e) { }
+
+                redirectNow();
+            }
+        }, true);
+
+        window.addEventListener('pageshow', function (event) {
+            try {
+                if (event.persisted || sessionStorage.getItem('quickExit') === 'true') {
+                    redirectNow();
+                }
+            } catch (e) { }
+        });
+
+        window.addEventListener('popstate', function () {
+            try {
+                if (sessionStorage.getItem('quickExit') === 'true') {
+                    redirectNow();
+                }
+            } catch (e) { }
+        });
+
+    })();
+
 
     // favorite btn
-    $('.favbtn').click(function(){
+    $('.favbtn').click(function () {
         $(this).toggleClass('active');
     })
 
 })
+
