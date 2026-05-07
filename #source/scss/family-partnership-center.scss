@@ -574,11 +574,27 @@ input[type=number] {
 }
 
 // color: #0f1727a6;
+.fltitem .fltitem-icons img {
+    vertical-align: top;
+}
 .favbtn {
     padding: 0;
     background: transparent;
     border: none;
     margin-right: 10px;
+    cursor: pointer;
+
+    svg {
+        vertical-align: top;
+    }
+
+    &.active {
+        svg {
+            path {
+                fill: #ffc107;
+            }
+        }
+    }
 }
 
 @media(max-width:1199.8px) {
