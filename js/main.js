@@ -37,14 +37,7 @@ $(document).ready(function () {
                 }
             );
         } else {
-            // $('.has-submenu').on('click', function (e) {
-            //     e.preventDefault();
-            //     $('.megamenu').removeClass('is-open');
-            //     $('.has-submenu').removeClass('active');
 
-            //     $(this).find('.megamenu').toggleClass('is-open');
-            //     $(this).toggleClass('active');
-            // });
             $('.has-submenu').on('click', function (e) {
                 // e.preventDefault();
 
@@ -274,22 +267,6 @@ $(document).ready(function () {
 
 
     // ESCAPE
-    //     document.addEventListener('keydown', function (e) {
-    //     if (e.key === 'Escape') {
-    //         e.preventDefault();
-    //         e.stopImmediatePropagation();
-
-    //         // очищаємо дані
-    //         sessionStorage.clear();
-    //         localStorage.clear();
-
-    //         // замінюємо поточну історію
-    //         history.replaceState(null, '', '/');
-
-    //         // редірект на безпечний сайт
-    //         window.location.replace('https://www.google.com');
-    //     }
-    // }, true);
 
 
     (function () {
@@ -299,18 +276,17 @@ $(document).ready(function () {
             window.location.replace(SAFE_URL);
         }
 
-        window.addEventListener('keydown', function (e) {
-            if (e.key === 'Escape') {
+        document.addEventListener('click', function (e) {
+            if (e.target.closest('.header__escape')) {
                 e.preventDefault();
-                e.stopImmediatePropagation();
 
                 try {
                     sessionStorage.setItem('quickExit', 'true');
-                } catch (e) { }
+                } catch (err) { }
 
                 redirectNow();
             }
-        }, true);
+        });
 
         window.addEventListener('pageshow', function (event) {
             try {
@@ -330,11 +306,37 @@ $(document).ready(function () {
 
     })();
 
-
     // favorite btn
     $('.favbtn').click(function () {
         $(this).toggleClass('active');
     })
+
+    // article
+    var swiper = new Swiper(".related-slider", {
+        speed: 700,
+        spaceBetween: 20,
+        loop: true,
+        slidesPerView: 1,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        breakpoints: {
+
+            767: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            991: {
+                slidesPerView: 3,
+                spaceBetween: 24,
+            },
+        },
+    });
 
 })
 
