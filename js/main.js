@@ -266,89 +266,57 @@ $(document).ready(function () {
     }
 
 
-    // ESCAPE
-
-
-    // (function () {
-    //     var SAFE_URL = 'https://www.google.com';
-
-    //     function redirectNow() {
-    //         window.location.replace(SAFE_URL);
-    //     }
-
-    //     document.addEventListener('click', function (e) {
-    //         if (e.target.closest('.header__escape')) {
-    //             e.preventDefault();
-
-    //             try {
-    //                 sessionStorage.setItem('quickExit', 'true');
-    //             } catch (err) { }
-
-    //             redirectNow();
-    //         }
-    //     });
-
-    //     window.addEventListener('pageshow', function (event) {
-    //         try {
-    //             if (event.persisted || sessionStorage.getItem('quickExit') === 'true') {
-    //                 redirectNow();
-    //             }
-    //         } catch (e) { }
-    //     });
-
-    //     window.addEventListener('popstate', function () {
-    //         try {
-    //             if (sessionStorage.getItem('quickExit') === 'true') {
-    //                 redirectNow();
-    //             }
-    //         } catch (e) { }
-    //     });
-
-    // })();
-
-    (function () {
-        var SAFE_URL = 'https://www.google.com';
-
-        function redirectNow() {
-            window.location.replace(SAFE_URL);
+    // ESCAPE — Quick Safety Exit
+    // Removes traces of the Family Services site so an abuser entering the
+    // victim's space cannot see where they've been:
+    //   1. Overwrites the current history entry (back button won't return here).
+    //   2. Clears localStorage, sessionStorage and accessible cookies.
+    //   3. Replaces the current tab with a neutral site (Weather.com).
+    // Also bound to the Esc key for fast keyboard escape.
+    function quickEscape(e) {
+        if (e && typeof e.preventDefault === 'function') {
+            e.preventDefault();
         }
 
-        document.addEventListener('click', function (e) {
-            if (e.target.closest('.header__escape')) {
-                e.preventDefault();
+        var safeUrl = 'https://weather.com/';
 
-                try {
-                    sessionStorage.setItem('quickExit', 'true');
-                } catch (err) { }
-
-                // Перемотуємо всю історію назад і замінюємо на Google
-                var steps = window.history.length;
-                window.history.go(-steps);
-
-                setTimeout(function () {
-                    redirectNow();
-                }, 100);
+        try {
+            if (window.history && typeof window.history.replaceState === 'function') {
+                window.history.replaceState(null, '', safeUrl);
             }
-        });
+        } catch (err) { /* ignore */ }
 
-        window.addEventListener('pageshow', function (event) {
-            try {
-                if (event.persisted || sessionStorage.getItem('quickExit') === 'true') {
-                    sessionStorage.removeItem('quickExit');
-                    redirectNow();
-                }
-            } catch (e) { }
-        });
+        try { window.localStorage && window.localStorage.clear(); } catch (err) { /* ignore */ }
+        try { window.sessionStorage && window.sessionStorage.clear(); } catch (err) { /* ignore */ }
 
-        window.addEventListener('popstate', function () {
-            try {
-                if (sessionStorage.getItem('quickExit') === 'true') {
-                    redirectNow();
-                }
-            } catch (e) { }
-        });
+        try {
+            var cookies = document.cookie ? document.cookie.split(';') : [];
+            for (var i = 0; i < cookies.length; i++) {
+                var name = cookies[i].split('=')[0].trim();
+                if (!name) continue;
+                var expire = '=; expires=Thu, 01 Jan 1970 00:00:00 GMT';
+                document.cookie = name + expire + '; path=/';
+                document.cookie = name + expire + '; path=/; domain=' + location.hostname;
+                document.cookie = name + expire + '; path=/; domain=.' + location.hostname;
+            }
+        } catch (err) { /* ignore */ }
 
-    })();
+        try {
+            window.location.replace(safeUrl);
+        } catch (err) {
+            window.location.href = safeUrl;
+        }
+    }
+
+    $(document).on('click', '.header__escape', quickEscape);
+
+    $(document).on('keydown', function (e) {
+        if (e.key === 'Escape' || e.keyCode === 27) {
+            quickEscape(e);
+        }
+    });
+
+
 
     // favorite btn
     $('.favbtn').click(function () {
