@@ -269,6 +269,43 @@ $(document).ready(function () {
     // ESCAPE
 
 
+    // (function () {
+    //     var SAFE_URL = 'https://www.google.com';
+
+    //     function redirectNow() {
+    //         window.location.replace(SAFE_URL);
+    //     }
+
+    //     document.addEventListener('click', function (e) {
+    //         if (e.target.closest('.header__escape')) {
+    //             e.preventDefault();
+
+    //             try {
+    //                 sessionStorage.setItem('quickExit', 'true');
+    //             } catch (err) { }
+
+    //             redirectNow();
+    //         }
+    //     });
+
+    //     window.addEventListener('pageshow', function (event) {
+    //         try {
+    //             if (event.persisted || sessionStorage.getItem('quickExit') === 'true') {
+    //                 redirectNow();
+    //             }
+    //         } catch (e) { }
+    //     });
+
+    //     window.addEventListener('popstate', function () {
+    //         try {
+    //             if (sessionStorage.getItem('quickExit') === 'true') {
+    //                 redirectNow();
+    //             }
+    //         } catch (e) { }
+    //     });
+
+    // })();
+
     (function () {
         var SAFE_URL = 'https://www.google.com';
 
@@ -284,13 +321,20 @@ $(document).ready(function () {
                     sessionStorage.setItem('quickExit', 'true');
                 } catch (err) { }
 
-                redirectNow();
+                // Перемотуємо всю історію назад і замінюємо на Google
+                var steps = window.history.length;
+                window.history.go(-steps);
+
+                setTimeout(function () {
+                    redirectNow();
+                }, 100);
             }
         });
 
         window.addEventListener('pageshow', function (event) {
             try {
                 if (event.persisted || sessionStorage.getItem('quickExit') === 'true') {
+                    sessionStorage.removeItem('quickExit');
                     redirectNow();
                 }
             } catch (e) { }
