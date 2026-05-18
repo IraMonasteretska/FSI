@@ -597,6 +597,10 @@ input[type=number] {
     }
 }
 
+.radioblock ul ul li {
+    margin-bottom: 10px;
+}
+
 @media(max-width:1199.8px) {
     .fltitem .imgwrap {
         height: 200px;
