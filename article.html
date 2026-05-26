@@ -9,6 +9,7 @@
     <!-- <link rel="icon" type="image/x-icon" href="favicon.png"> -->
     <link rel="stylesheet" href="css/lib/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/lib/swiper.css">
+    <link rel="stylesheet" href="css/lib/fancybox.css">
     <!-- --- -->
     <link rel="stylesheet" href="css/lib/select2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.8.1/nouislider.css">
@@ -226,12 +227,12 @@
             <div class="article-page">
                 <div class="container">
                     <article class="article">
-                        <p class="article__kicker">DIRECTORY</p>
+                        <a href="#" class="article__kicker">DIRECTORY</a>
                         <h1 class="article__title">Organization Name</h1>
                         <div class="row">
                             <div class="col-lg-8">
                                 <figure class="article__media">
-                                    <img src="img/article/article-hero.jpg" alt="img">
+                                    <img src="img/article/logo2.png" alt="img">
                                 </figure>
 
                                 <div class="article__content">
@@ -298,7 +299,9 @@
                                         <h2 class="article-sidebar__find-title">Find Us</h2>
 
                                         <div class="article-sidebar__map" aria-label="Find Us map">
-                                            <img src="img/article/findus.jpg" alt="img">
+                                            <a href="img/article/findus-big.jpg" data-fancybox="gallery-1">
+                                                <img src="img/article/findus.jpg" alt="Program image preview">
+                                            </a>
                                         </div>
 
                                         <div class="article-sidebar__categories" aria-label="Categories">
@@ -321,8 +324,7 @@
                             <div class="swiper-slide">
                                 <div class="related-services__card">
                                     <div class="related-services__media">
-                                        <img class="related-services__img" src="img/article/related-service-1.jpg"
-                                            alt="">
+                                        <img class="related-services__img" src="img/article/logo.png" alt="">
                                     </div>
 
                                     <div class="related-services__body">
@@ -352,8 +354,7 @@
                             <div class="swiper-slide">
                                 <div class="related-services__card">
                                     <div class="related-services__media">
-                                        <img class="related-services__img" src="img/article/related-service-1.jpg"
-                                            alt="">
+                                        <img class="related-services__img" src="img/article/logo.png" alt="">
                                     </div>
 
                                     <div class="related-services__body">
@@ -383,8 +384,7 @@
                             <div class="swiper-slide">
                                 <div class="related-services__card">
                                     <div class="related-services__media">
-                                        <img class="related-services__img" src="img/article/related-service-1.jpg"
-                                            alt="">
+                                        <img class="related-services__img" src="img/article/logo.png" alt="">
                                     </div>
 
                                     <div class="related-services__body">
@@ -411,7 +411,6 @@
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -551,6 +550,7 @@
 <!-- -- -->
 <script src="js/lib/select2.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.8.1/nouislider.min.js"></script>
+<script src="js/lib/fancybox.js"></script>
 
 <!-- --- -->
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>

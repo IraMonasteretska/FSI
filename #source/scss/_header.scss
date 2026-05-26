@@ -248,17 +248,26 @@ header.header {
         line-height: 40px;
         border-bottom: 2px solid #0A85BE;
         transition: 0.3s;
+        margin: 0;
 
-        &:hover {
-            color: #a51f7a;
-            border-bottom: 2px solid #a51f7a;
-        }
+        // &:hover {
+        //     color: #a51f7a;
+        //     border-bottom: 2px solid #a51f7a;
+        // }
     }
 
     ul {
         list-style-type: none;
         margin: 0;
         padding: 15px 0 0 0;
+
+        li {
+            margin-bottom: 15px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }   
+        }
 
         a {
             color: #000;

@@ -24,8 +24,19 @@ $(document).ready(function () {
     });
 
     // menu
+    function closeMobileNav() {
+        $('.header__nav').removeClass('show');
+        $('body').removeClass('hidden');
+        $('.burger2').removeClass('on');
+    }
+
+    function isNavigableHref(href) {
+        return href && href !== '#' && href.indexOf('javascript:') !== 0;
+    }
+
     function setupSubmenuBehavior() {
-        $('.has-submenu').off('mouseenter mouseleave click');
+        $('.has-submenu').off('mouseenter mouseleave');
+        $('.has-submenu > a').off('click');
 
         if ($(window).width() > 991) {
             $('.has-submenu').hover(
@@ -37,16 +48,19 @@ $(document).ready(function () {
                 }
             );
         } else {
+            $('.has-submenu > a').on('click', function (e) {
+                var href = $(this).attr('href');
 
-            $('.has-submenu').on('click', function (e) {
-                // e.preventDefault();
+                if (isNavigableHref(href)) {
+                    closeMobileNav();
+                    return;
+                }
 
-                var $current = $(this);
+                e.preventDefault();
 
-                // Закриваємо всі інші, крім поточного
+                var $current = $(this).parent('.has-submenu');
+
                 $('.has-submenu').not($current).removeClass('active').find('.megamenu').removeClass('is-open');
-
-                // Перемикаємо поточний
                 $current.toggleClass('active');
                 $current.find('.megamenu').toggleClass('is-open');
             });
@@ -55,6 +69,14 @@ $(document).ready(function () {
     setupSubmenuBehavior();
     $(window).on('resize', function () {
         setupSubmenuBehavior();
+    });
+
+    $('.header__nav').on('click', '.megamenu a', function () {
+        if ($(window).width() > 991) return;
+
+        if (isNavigableHref($(this).attr('href'))) {
+            closeMobileNav();
+        }
     });
 
     // events slider
