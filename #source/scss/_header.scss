@@ -574,13 +574,15 @@ header.header {
         left: 0;
         top: 115px;
         background: #fff;
-        height: calc(100vh - 115px);
+         height: calc(100vh - 115px);
+        height: calc(100dvh - 115px);
         border-top: 5px solid #55b95d;
         text-align: left;
         padding: 40px;
         transition: 0.5s;
         transform: translateX(100%);
         overflow: auto;
+         -webkit-overflow-scrolling: touch;
 
         &.show {
             transform: translateX(0);
@@ -652,6 +654,7 @@ header.header {
     .header__nav {
         top: 100px;
         height: calc(100vh - 100px);
+        height: calc(100dvh - 100px);
     }
 
     .grid-item,
